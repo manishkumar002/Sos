@@ -1,0 +1,16 @@
+# Environment files
+.env
+.env.*
+
+# Google / cloud keys
+serviceAccountKey.json
+service_account_googleCloud.json
+*.pem
+*.key
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log

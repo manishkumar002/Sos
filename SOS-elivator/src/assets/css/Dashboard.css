@@ -1,0 +1,114 @@
+.textClass {
+  height: 40px;
+  font-size: 14px;
+  color: #a3aed0 !important;
+}
+.callsRowTitle {
+  height: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0f405b;
+}
+.callsRowTitleGreen {
+  height: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0cc708;
+}
+table thead tr th {
+  padding: 0;
+  text-align: left !important;
+}
+table tbody tr td {
+  padding: 0;
+  text-align: left !important;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.lift-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s; /* Optional for smooth transition */
+  font-weight: 600;
+}
+
+.lift-row.selected {
+  /* background: linear-gradient(
+    to right,
+    #fbf9ff,
+    #f4efff,
+    #fbf9ff
+  );
+  box-shadow: 0px -1px 5px 0px #c8c8c8;*/
+  border: 1px solid #c8c8c8;
+  border-radius: 15px;
+  /*padding: 0; Ensure no padding for the full width */
+  margin-left: -10px; /* Ensure no margin for the full width */
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.lift-row:not(.selected):hover {
+  background: #ebf8ff; /* Hover effect for unselected */
+}
+
+.lift-row:not(.selected) {
+  background: #fff; /* Background for unselected */
+}
+/* .bar_graph_speed {
+  transition: height 2s ease-out;
+} */
+@keyframes growBar {
+  from {
+    transform: scaleY(0) translateY(20px); /* Start with 0 height */
+    transform-origin: bottom;
+  }
+  to {
+    transform: scaleY(1); /* Full height */
+    transform-origin: bottom;
+  }
+}
+
+/* Hover state */
+/* .bar_graph_speed:hover {
+  fill: white !important; 
+} */
+
+.linearGradiantData:hover {
+  fill: white !important; 
+}
+
+.tooltipDataBar:hover {
+  fill: white !important; 
+}
+
+.bar_graph_speed {
+  animation: growBar 2s ease-out; /* 2 seconds for animation */
+  transform-origin: bottom;
+}
+
+.callsHeaderTitle {
+  padding-left: 0;
+  text-align: left;
+  color: #A3AED0;
+}
+.callsTitleValue{
+  color: #0F405B;
+}
+
+/* Agent Page css*/
+.agent-active-button{
+  background-color: #017BFF !important;
+  color:#ffffff;
+}
+.agent-inactive-button{
+  background-color: #D9D9D9 !important;
+  color:#000000;
+}
