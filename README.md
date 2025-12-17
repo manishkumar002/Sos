@@ -88,13 +88,6 @@ SOS-Elevator/
 
 ## 🛠 Backend Setup (Node.js + Express)
 
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/your-username/sos-elevator.git
-cd sos-elevator/backend
-```
-
 ### 2️⃣ Install Dependencies
 
 ```bash
@@ -126,49 +119,8 @@ Backend will run on:
 http://localhost:5000
 ```
 
----
-
-## 🗄 MySQL Database Setup
-
-```sql
-CREATE DATABASE sos_elevator;
-USE sos_elevator;
-
--- Users Table
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
-  email VARCHAR(100),
-  role ENUM('agent','technician')
-);
-
--- Elevators Table
-CREATE TABLE elevators (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  elevator_code VARCHAR(50),
-  location VARCHAR(255)
-);
-
--- SOS Requests Table
-CREATE TABLE sos_requests (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  elevator_id INT,
-  agent_id INT,
-  technician_id INT,
-  status ENUM('pending','assigned','resolved'),
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
----
 
 ## 🖥 Frontend Setup (React.js)
-
-### 1️⃣ Go to Frontend Folder
-
-```bash
-cd ../frontend
-```
 
 ### 2️⃣ Install Dependencies
 
