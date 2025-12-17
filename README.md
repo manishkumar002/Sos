@@ -12,7 +12,7 @@ This system helps **trapped passengers or agents inside an elevator** to quickly
 * React.js
 * Redux Toolkit
 * Axios
-* WebRTC (for Video Call)
+* agora (for Video Call)
 * Bootstrap / CSS
 
 ### Backend
