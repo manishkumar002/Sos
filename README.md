@@ -273,39 +273,6 @@ localTrack[1].play('local-video');
 
 ---
 
-## 🚀 API Sample
 
-### SOS Request
 
-```http
-POST /api/sos
-```
 
-```json
-{
-  "elevator_id": 2,
-  "message": "Stuck inside lift"
-}
-```
-
----
-
-## 📌 Future Enhancements
-
-* 📱 Mobile App (React Native)
-* 📍 Live GPS Tracking
-* 📊 Admin Dashboard
-* 🔔 Push Notifications
-
----
-
-## 👨‍💻 Author
-
-**XTeam Code Repo**
-SOS Elevator Emergency System
-
----
-
-## 📄 License
-
-MIT License
